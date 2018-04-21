@@ -19,22 +19,4 @@
         <url-pattern>/api/*</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>client-servlet</servlet-name>
-        <servlet-class>org.mitre.dsmiley.httpproxy.ProxyServlet</servlet-class>
-        <init-param>
-            <param-name>targetUri</param-name>
-            <param-value>http://localhost:8080/client/assets</param-value>
-        </init-param>
-        <init-param>
-            <param-name>log</param-name>
-            <param-value>true</param-value>
-        </init-param>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>client-servlet</servlet-name>
-        <url-pattern>/client/assets/*</url-pattern>
-    </servlet-mapping>
-
 </web-app>
